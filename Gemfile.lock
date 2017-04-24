@@ -8,6 +8,14 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 1.9.0)
+    capistrano-composer (0.0.6)
+      capistrano (>= 3.0.0.pre)
+    capistrano-file-permissions (1.0.0)
+      capistrano (~> 3.0)
+    capistrano-magento2 (0.6.2)
+      capistrano (~> 3.1)
+    capistrano-upload-config (0.7.0)
+      capistrano (>= 3.0)
     i18n (0.8.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -22,6 +30,10 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano (~> 3.8)
+  capistrano-composer
+  capistrano-file-permissions
+  capistrano-magento2
+  capistrano-upload-config
 
 BUNDLED WITH
    1.14.3

@@ -1,27 +1,12 @@
 # Magento2-Capistrano-Deploy
 Deploy Magento 2 site using Capistrano
 
-## How is it made?
+## Documentation
 
-### Create a Ruby project
+- [How is it made?](https://github.com/unetstudio/magento-2-capistrano-deploy/wiki/How-it's-made)
 
-```bash
-bundle init
-```
+## Install
 
-### Install Capistrano
+## Configuration
 
-First, add Capistrano gem to the Gemfile:
-
-```ruby
-group :development do
-    gem "capistrano","~> 3.8"
-end
-```
-
-Then, capify a project:
-
-```
-bundle install
-bundle exec cap install
-```
+## Credit
