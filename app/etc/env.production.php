@@ -2,7 +2,7 @@
 return array (
   'backend' => 
   array (
-    'frontName' => '<ADMIN_PATH>',
+    'frontName' => 'ADMIN_PATH',
   ),
   'db' => 
   array (
@@ -10,10 +10,10 @@ return array (
     array (
       'indexer' => 
       array (
-        'host' => '<MYSQL_HOST>',
-        'dbname' => '<DB_NAME>',
-        'username' => '<DB_USERNAME>',
-        'password' => '<DB_PASSWORD>',
+        'host' => 'MYSQL_HOST',
+        'dbname' => 'DB_NAME',
+        'username' => 'DB_USERNAME',
+        'password' => 'DB_PASSWORD',
         'model' => 'mysql4',
         'engine' => 'innodb',
         'initStatements' => 'SET NAMES utf8;',
@@ -22,10 +22,10 @@ return array (
       ),
       'default' => 
       array (
-        'host' => '<MYSQL_HOST>',
-        'dbname' => '<DB_NAME>',
-        'username' => '<DB_USERNAME>',
-        'password' => '<DB_PASSWORD>',
+        'host' => 'MYSQL_HOST',
+        'dbname' => 'DB_NAME',
+        'username' => 'DB_USERNAME',
+        'password' => 'DB_PASSWORD',
         'model' => 'mysql4',
         'engine' => 'innodb',
         'initStatements' => 'SET NAMES utf8;',

@@ -59,3 +59,5 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+after 'magento:setup:static-content:deploy', 'magento2:add_adminer'
