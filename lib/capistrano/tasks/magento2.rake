@@ -9,6 +9,15 @@ namespace :magento2 do
     end
   end
 
+  desc "Copy config.php"
+  task :copy_config do
+    on roles(:all) do |host|
+      if !test("[ -f #{release_path}/app/etc/config.php ]") and test("[ -f #{release_path}/app/etc/config.php.dist ]")
+        execute :cp, "-r", "#{release_path}/app/etc/config.php.dist", "#{release_path}/app/etc/config.php"
+      end
+    end
+  end
+
   desc "Restart PHP FPM"
   task :restart_php_fpm do
     on roles(:all), in: :sequence, wait: 1 do
