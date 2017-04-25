@@ -44,7 +44,7 @@ set :config_files, %w{app/etc/env.php pub/.htaccess}
 # push link files after check them exist.
 before 'deploy:check:linked_files', 'config:push'
 
-set :magento_deploy_setup_role, :main
+set :magento_deploy_setup_role, :all
 set :magento_deploy_cache_shared, true
 set :magento_deploy_languages, ['en_US']
 set :magento_deploy_themes, []

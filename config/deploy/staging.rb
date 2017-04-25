@@ -30,7 +30,8 @@
 # For available Capistrano configuration variables see the documentation page.
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
-
+set :branch, 'staging'
+set :deploy_to, "/var/www/my_app_name"
 
 
 # Custom SSH Options
