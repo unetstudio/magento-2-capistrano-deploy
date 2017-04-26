@@ -15,6 +15,13 @@ require "capistrano/deploy"
 require "capistrano/scm/git"
 install_plugin Capistrano::SCM::Git
 
+require 'capistrano/composer'
+require 'capistrano/upload-config'
+require 'capistrano/file-permissions'
+
+# Load Magento deployment tasks
+require 'capistrano/magento2/deploy'
+
 # Include tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:
