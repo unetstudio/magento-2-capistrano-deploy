@@ -46,3 +46,11 @@ Single application server deploy for each stage, e.g for production:
 ```
 bundle exec cap production deploy
 ```
+
+## References
+
+[https://github.com/bundler/bundler](https://github.com/bundler/bundler)
+
+[https://github.com/capistrano/capistrano](https://github.com/capistrano/capistrano)
+
+[https://github.com/davidalger/capistrano-magento2](https://github.com/davidalger/capistrano-magento2)
