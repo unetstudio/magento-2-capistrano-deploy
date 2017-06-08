@@ -66,5 +66,6 @@ before "deploy:updated", "deploy:set_permissions:acl"
 set :magento_auth_public_key, 'MAGENTO_USERNAME'
 set :magento_auth_private_key, 'MAGENTO_PASSWORD'
 
+before "deploy:updated", "deploy:set_permissions:acl"
 before 'magento:deploy:verify', 'magento2:copy_config'
 after 'magento:maintenance:disable', 'magento2:restart_php_fpm'
