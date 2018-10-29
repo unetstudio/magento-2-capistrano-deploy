@@ -20,7 +20,7 @@ Deploy Magento 2 site using Capistrano
 Using bundler for install dependencies gem
 
 ```
-bundle install
+bundle install --path vendor/bundle
 ```
 
 ## Configuration
